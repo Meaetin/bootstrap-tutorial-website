@@ -1,0 +1,68 @@
+body {
+  font-family: 'Bricolage Grotesque One', sans-serif;
+}
+
+.gradient-background {
+    background: linear-gradient(300deg, #00bfff, #ff4c68, #ef8172);
+    background-size: 180% 180%;
+    animation: gradient-animation 18s ease infinite;
+  }
+  
+  @keyframes gradient-animation {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.logo-cont {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  padding-left: 1rem;
+  cursor: pointer;
+}
+
+.logo-cont p {
+  font-size: 3rem;
+  color: #fff;
+  margin: 0;
+}
+
+.title p{
+ font-weight: bold;
+ line-height: normal;
+ padding-bottom: 2rem;
+}
+
+.title {
+  padding-right: 11rem;
+  font-size: 32px;
+}
+
+.title span {
+  color: white;
+  font-style: italic;
+  cursor: pointer;
+}
+
+.hero button {
+  width: 100%;
+  font-style: italic;
+  font-weight: bold;
+  padding: 1rem 0;
+}
+
+.subscription button:hover {
+  transform: scale(1.1);
+}
